@@ -1,0 +1,20 @@
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: ingress-nginx
+  labels:
+    system: ingress
+---
+apiVersion: v1
+kind: ResourceQuota
+metadata:
+  name: compute-resources
+  namespace: ingress-nginx
+spec:
+  hard:
+    pods: "6"
+    requests.cpu: "1500m"
+    requests.memory: 1Gi
+    limits.cpu: "2500m"
+    limits.memory: 2Gi
