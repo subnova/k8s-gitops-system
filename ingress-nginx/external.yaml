@@ -55,7 +55,7 @@ spec:
             - --udp-services-configmap=$(POD_NAMESPACE)/udp-services-external
             - --publish-service=$(POD_NAMESPACE)/ingress-nginx-external
             - --annotations-prefix=nginx.ingress.kubernetes.io
-            - --ingress-class=external
+            - --ingress-class=nginx
           securityContext:
             capabilities:
                 drop:
