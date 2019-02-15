@@ -62,7 +62,7 @@ spec:
       containers:
       - args:
         - --source=ingress
-        - --domain-filter=daleaws.com
+        - --domain-filter=daleaws.co.uk
         - --annotation-filter=kubernetes.io/ingress.class=nginx
         - --provider=aws
         - --aws-zone-type=public
