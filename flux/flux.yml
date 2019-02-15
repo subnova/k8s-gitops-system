@@ -157,11 +157,8 @@ spec:
             - --git-url=git@github.com:subnova/k8s-gitops-apps
             - --git-branch=master
 
-            # added --registry-poll-interval and --sync-interval (which weren't set originally)
-            # reduced --registry-rps from 200 to 10
-            # stretched registry poll interval to 10h as it's (a) broken and (b) not needed
             - --git-poll-interval=1m
-            - --sync-interval=2m
+            - --sync-interval=1m
             - --registry-poll-interval=20m
             - --registry-rps=10
 
